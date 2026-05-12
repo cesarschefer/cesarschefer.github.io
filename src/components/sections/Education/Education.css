@@ -1,0 +1,120 @@
+.education {
+  background: var(--surface-container-low);
+}
+
+.education__grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.education__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education__card {
+  background: var(--surface-container);
+  border-radius: var(--radius-2xl);
+  padding: 2rem;
+  border: 1px solid rgba(73, 68, 84, 0.1);
+  transition: all 200ms ease-out;
+}
+
+.education__card:hover {
+  background: var(--surface-container-high);
+  border-color: rgba(208, 188, 255, 0.08);
+}
+
+.education__card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.education__icon {
+  font-size: 2rem;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-xl);
+  background: rgba(208, 188, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(208, 188, 255, 0.1);
+}
+
+.education__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.education__degree {
+  color: var(--on-surface);
+}
+
+.education__desc {
+  margin-bottom: 1.25rem;
+  line-height: 1.65;
+}
+
+.education__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+/* Certifications card */
+.education__certs {
+  background: var(--surface-container);
+  border-radius: var(--radius-2xl);
+  padding: 1.75rem;
+  border: 1px solid rgba(73, 68, 84, 0.1);
+  position: sticky;
+  top: 100px;
+}
+
+.education__certs-header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(73, 68, 84, 0.15);
+}
+
+.education__certs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education__cert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.education__cert-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 1024px) {
+  .education__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education__certs {
+    position: static;
+  }
+}
