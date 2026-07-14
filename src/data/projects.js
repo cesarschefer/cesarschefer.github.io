@@ -1,10 +1,28 @@
 export const projects = [
     {
+        id: 'memora',
+        title: 'Memora',
+        description: 'AI-powered notebook and journaling platform that serves as a neural second brain for personal knowledge, powered by semantic search and RAG.',
+        stack: [
+            'Laravel', 'React', 'TypeScript', 'Inertia.js', 'PostgreSQL', 'Laravel Queues & Workers', 'Laravel AI SDK',
+            'Gemini API', 'pgvector', 'Spatie PDF'
+        ],
+        features: [
+            'Chat with AI about uploaded documents using RAG and pgvector',
+            'AI-powered daily journal with generated titles and images',
+            'Background document processing and vector embedding generation',
+        ],
+        image: '/images/memora.webp',
+        github: 'https://github.com/cesarschefer/memora',
+        size: 'project-hero',
+        contextTag: 'RAG Application'
+    },
+    {
         id: 'chatbot-ai',
         title: 'AI Chatbots',
-        description: 'AI Chatbots is a platform for building and managing AI-powered chatbots with custom knowledge bases.',
-        stack: ['Laravel', 'Queues + Workers', 'React', 'MySQL', 'Inertia.js',
-            'Spatie PDF', 'DomCrawler', 'Groq', 'OpenAI', 'TypeScript'],
+        description: 'Platform for building and managing AI-powered chatbots with custom knowledge bases.',
+        stack: ['Laravel', 'Laravel Queues & Workers', 'React', 'MySQL', 'Inertia.js',
+            'Spatie PDF', 'DomCrawler', 'Groq API', 'OpenAI API', 'TypeScript'],
         features: [
             'Multi-agent management: custom system prompts, model selection (OpenAI / Groq), and temperature control',
             'PDF and web scraping ingestion via async background queues',
@@ -19,7 +37,7 @@ export const projects = [
     {
         id: 'inventory-pro',
         title: 'StockFlow',
-        description: 'StockFlow is a inventory management system built around transactional consistency and concurrency safety.',
+        description: 'Inventory management system built around transactional consistency and concurrency safety.',
         stack: ['Laravel', 'Spatie Permissions', 'Maatwebsite Excel',
             'DomPDF', 'Inertia.js', 'React', 'TypeScript'],
         features: [
